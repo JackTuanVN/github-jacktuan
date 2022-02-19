@@ -7,7 +7,6 @@ import os
 EDITH = pyttsx3.init()
 voice = EDITH.getProperty('voices')
 EDITH.setProperty('voice',voice[1].id)
-
 def speak(audio):
     print('E.D.I.T.H.: ' + audio)
     EDITH.say(audio)
